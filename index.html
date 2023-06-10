@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+             <h1>Hi,I'm <span>Madhu Harshitha</span></h1>
+             <p> Engineering Student</p>
+        </div>
+    </div>
+</div>
+<!-- ---------------about--------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">AboutMe</h1>
+                <p><br>Thanks for giving me this oppurtunity,here is a quick brief about me.<br>            
+                 Iam M.Madhu Harshitha currently pursuing 2nd year B.tech in Computer Science and <br>Engineering branch in Vellagapudi Ramakrishna Engineering College,kanuru Vijayawada.
+                <br>I'm good at python programming.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('years')">years</p>
+                    <p class="tab-links" onclick="opentab('skills')">skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>Engineering</span><br>At VR Siddhartha Engineering College</li>
+                        <li><span>INtermediate</span><br>At Sri Chaitanya Junior College</li>
+                        <li><span>Schooling</span><br>At Sri Venkateswara E.M High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="years">
+                    <ul>
+                        <li><span>2021-current</span><br>Computer Science And engineering</li>
+                        <li><span>2019-2021</span><br>MPC</li>
+                        <li><span>2019</span><br>10th class</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>java programming</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------protfolio------------- -->
+<div is="protfolio">
+    <div class="container">
+        <h1 class="sub-title">My Achievements</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Achievement 1</h3>
+                    <p>Mentored HackTX<br>#Selected for aquathon hackthon.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Achievement 2 </h3>
+                    <p>Completion of the NPTEL Certification <br>#Python for Datascience<br>#Programming in Modern C++</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Achievement 3 </h3>
+                    <p>Certificate of participaion <br>#In the Online Quiz on India- the Mother of Democracy</p>
+                    <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!-------projects------------>
+<div is="protfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Project 1 </h3>
+                    <p>Qualified for the 2nd round in Aquathon Hackthon</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Project 2 </h3>
+                    <p>On going project on Indian Traditions and Cultures</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Project 3 </h3>
+                    <p>wish to do more projects in future</p>
+                    <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!-- ----------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>0123456789</p>
+                <a href="images/my-cv.pdg" download class="btn btn2">Downlaod CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright madhu. Made with <i class="fas fa-heart"></i> by Easy Tutoials</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
